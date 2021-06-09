@@ -53,9 +53,25 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        overflow: hidden;
+    }
     .nav-links {
         position: absolute;
         right: 0px;
         height: 92vh;
+        top: 8vh;
+        background-color: rgb(162, 198, 158);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
     }
 }
