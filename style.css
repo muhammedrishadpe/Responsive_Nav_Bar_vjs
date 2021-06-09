@@ -23,7 +23,6 @@ nav {
     display: flex;
     justify-content: space-around;
     width: 30%;
-
 }
 .nav-links li{
     list-style: none;
@@ -35,4 +34,28 @@ nav {
     font-weight: bold;
     font-size: 14px;
 
+}
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(237, 237, 237);
+    margin: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+    }
 }
